@@ -70,13 +70,13 @@ export function Projects() {
                   ) : null}
                   {project.repo ? (
                     <ActionLink
-                      href={project.repo}
+                      href={project.repo === "#" ? profile.github : project.repo}
                       size="sm"
                       variant="outline"
                       target="_blank"
                       rel="noreferrer noopener"
                     >
-                      <Github className="h-3.5 w-3.5" /> GitHub
+                      <Github className="h-3.5 w-3.5" /> Source Code
                     </ActionLink>
                   ) : null}
                 </div>
