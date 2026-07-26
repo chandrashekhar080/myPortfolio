@@ -1,5 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
-import { projects } from "@/data/portfolio";
+import { projects, profile } from "@/data/portfolio";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { ActionLink } from "./action-button";

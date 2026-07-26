@@ -13,8 +13,8 @@ export const profile = {
   tagline: "Building Modern, Responsive & Scalable Web Applications with React.js.",
   email: "shivanipatel7180@gmail.com",
   phone: "+91 7489099533",
-  linkedin: "https://www.linkedin.com/in/shivani-patel",
-  github: "https://github.com/shivanipatel",
+  linkedin: "https://www.linkedin.com/in/shivani-patel-450164273/",
+  github: "https://github.com/Patel1shivani",
   company: "Fovty Software Solution Pvt. Ltd.",
 };
 
