@@ -72,11 +72,12 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: "React.js Frontend Developer",
+    role: "AI / React.js Frontend Developer",
     company: "Fovty Software Solution Pvt. Ltd.",
     location: "Indore, India",
-    duration: "2024 – Present",
+    duration: "June 2025 – Present",
     responsibilities: [
+      "Joined the AI team and contribute to intelligent frontend-driven features",
       "Develop responsive web applications using React.js",
       "Build reusable UI components and design-system patterns",
       "Implement Redux Toolkit for state management",
