@@ -1,5 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
-import { projects } from "@/data/portfolio";
+import { projects, profile } from "@/data/portfolio";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { ActionLink } from "./action-button";
@@ -70,13 +70,13 @@ export function Projects() {
                   ) : null}
                   {project.repo ? (
                     <ActionLink
-                      href={project.repo}
+                      href={project.repo === "#" ? profile.github : project.repo}
                       size="sm"
                       variant="outline"
                       target="_blank"
                       rel="noreferrer noopener"
                     >
-                      <Github className="h-3.5 w-3.5" /> GitHub
+                      <Github className="h-3.5 w-3.5" /> Source Code
                     </ActionLink>
                   ) : null}
                 </div>
