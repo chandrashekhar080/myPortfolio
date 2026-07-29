@@ -1,18 +1,17 @@
-# Welcome to your Lovable project
+# Shivani Patel — Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+Personal portfolio site for Shivani Patel, React.js frontend developer based in Indore, India.
 
-## Build with Lovable
+## Tech stack
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **React 19** with **TanStack Start** and **TanStack Router** (SSR)
+- **Tailwind CSS v4** with a custom glass / gradient design system
+- **Motion** for scroll and entrance animations
+- **TypeScript**, **Vite 8**, **Nitro** (Cloudflare module preset)
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
@@ -21,9 +20,29 @@ npm i
 npm run dev
 ```
 
-## Built with
+The dev server runs on http://localhost:8080 (Vite picks the next free port if it is taken).
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Start the dev server with HMR |
+| `npm run build` | Production build into `.output/` |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+| `npm run format` | Format with Prettier |
+
+## Project structure
+
+```
+src/
+  assets/                 project cover images
+  components/portfolio/   one component per page section
+  data/portfolio.ts       all site content (profile, skills, experience, projects)
+  lib/resume.ts           builds the print-ready résumé from portfolio data
+  routes/                 TanStack Router routes
+  styles.css              design tokens and utilities
+```
+
+Content lives in `src/data/portfolio.ts` — editing that file updates the site sections
+**and** the downloadable résumé.

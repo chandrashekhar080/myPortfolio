@@ -112,7 +112,7 @@ export function Hero() {
               <dt className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-muted-foreground">
                 Live projects
               </dt>
-              <dd className="mt-1 font-display text-xl font-bold">6+</dd>
+              <dd className="mt-1 font-display text-xl font-bold">9+</dd>
             </div>
             <div className="col-span-2 sm:col-span-1">
               <dt className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-muted-foreground">

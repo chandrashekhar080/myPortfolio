@@ -1,5 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
-import { projects, profile } from "@/data/portfolio";
+import { projects } from "@/data/portfolio";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { ActionLink } from "./action-button";
@@ -10,7 +10,7 @@ export function Projects() {
       <SectionHeading
         eyebrow="Projects"
         title="Websites and dashboards running in production"
-        description="Six delivered projects spanning marketing sites, admin panels and full management systems."
+        description="Nine delivered projects spanning marketing sites, admin panels and full management systems — each linked to its live site or source code."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -70,7 +70,7 @@ export function Projects() {
                   ) : null}
                   {project.repo ? (
                     <ActionLink
-                      href={project.repo === "#" ? profile.github : project.repo}
+                      href={project.repo}
                       size="sm"
                       variant="outline"
                       target="_blank"

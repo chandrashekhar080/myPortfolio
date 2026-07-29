@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 440" width="1024" height="440" role="img" aria-label="Nanny Services booking platform preview">
+  <defs>
+    <linearGradient id="nbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1550" />
+      <stop offset="55%" stop-color="#4c2170" />
+      <stop offset="100%" stop-color="#7b3f8c" />
+    </linearGradient>
+    <linearGradient id="nglow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <radialGradient id="nspot" cx="0.8" cy="0.1" r="0.7">
+      <stop offset="0%" stop-color="#ff9ec7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff9ec7" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="440" fill="url(#nbg)" />
+  <rect width="1024" height="440" fill="url(#nspot)" />
+  <circle cx="90" cy="410" r="170" fill="#f472b6" opacity="0.12" />
+
+  <!-- browser chrome -->
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="#ffffff" opacity="0.07" />
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.16" />
+  <g fill="#ffffff" opacity="0.34">
+    <circle cx="80" cy="58" r="6" />
+    <circle cx="102" cy="58" r="6" />
+    <circle cx="124" cy="58" r="6" />
+  </g>
+  <rect x="156" y="49" width="280" height="18" rx="9" fill="#ffffff" opacity="0.14" />
+  <path d="M920 72 C900 58 894 46 902 39 C909 33 917 36 920 42 C923 36 931 33 938 39 C946 46 940 58 920 72 Z" fill="url(#nglow)" opacity="0.9" />
+
+  <!-- hero band -->
+  <rect x="72" y="90" width="496" height="118" rx="16" fill="#ffffff" opacity="0.1" />
+  <rect x="96" y="114" width="280" height="16" rx="8" fill="url(#nglow)" />
+  <rect x="96" y="142" width="400" height="10" rx="5" fill="#ffffff" opacity="0.32" />
+  <rect x="96" y="162" width="320" height="10" rx="5" fill="#ffffff" opacity="0.22" />
+  <rect x="96" y="186" width="120" height="20" rx="10" fill="url(#nglow)" />
+
+  <!-- caregiver cards -->
+  <g>
+    <rect x="72" y="228" width="152" height="158" rx="14" fill="#ffffff" opacity="0.12" />
+    <circle cx="148" cy="270" r="26" fill="#ffffff" opacity="0.3" />
+    <rect x="102" y="308" width="92" height="11" rx="5.5" fill="#ffffff" opacity="0.42" />
+    <rect x="102" y="326" width="64" height="8" rx="4" fill="#ffffff" opacity="0.24" />
+    <rect x="102" y="350" width="92" height="18" rx="9" fill="url(#nglow)" opacity="0.85" />
+  </g>
+  <g>
+    <rect x="240" y="228" width="152" height="158" rx="14" fill="#ffffff" opacity="0.12" />
+    <circle cx="316" cy="270" r="26" fill="#ffffff" opacity="0.3" />
+    <rect x="270" y="308" width="92" height="11" rx="5.5" fill="#ffffff" opacity="0.42" />
+    <rect x="270" y="326" width="64" height="8" rx="4" fill="#ffffff" opacity="0.24" />
+    <rect x="270" y="350" width="92" height="18" rx="9" fill="url(#nglow)" opacity="0.85" />
+  </g>
+  <g>
+    <rect x="408" y="228" width="152" height="158" rx="14" fill="#ffffff" opacity="0.12" />
+    <circle cx="484" cy="270" r="26" fill="#ffffff" opacity="0.3" />
+    <rect x="438" y="308" width="92" height="11" rx="5.5" fill="#ffffff" opacity="0.42" />
+    <rect x="438" y="326" width="64" height="8" rx="4" fill="#ffffff" opacity="0.24" />
+    <rect x="438" y="350" width="92" height="18" rx="9" fill="url(#nglow)" opacity="0.85" />
+  </g>
+
+  <!-- booking / payment panel -->
+  <rect x="600" y="90" width="352" height="296" rx="18" fill="#ffffff" opacity="0.13" />
+  <rect x="624" y="114" width="120" height="13" rx="6.5" fill="#ffffff" opacity="0.5" />
+  <g fill="#ffffff" opacity="0.26">
+    <rect x="624" y="146" width="44" height="40" rx="8" />
+    <rect x="676" y="146" width="44" height="40" rx="8" />
+    <rect x="728" y="146" width="44" height="40" rx="8" />
+    <rect x="780" y="146" width="44" height="40" rx="8" />
+    <rect x="832" y="146" width="44" height="40" rx="8" />
+    <rect x="884" y="146" width="44" height="40" rx="8" />
+    <rect x="624" y="194" width="44" height="40" rx="8" />
+    <rect x="676" y="194" width="44" height="40" rx="8" />
+    <rect x="780" y="194" width="44" height="40" rx="8" />
+    <rect x="832" y="194" width="44" height="40" rx="8" />
+    <rect x="884" y="194" width="44" height="40" rx="8" />
+  </g>
+  <rect x="728" y="194" width="44" height="40" rx="8" fill="url(#nglow)" />
+  <rect x="624" y="256" width="304" height="12" rx="6" fill="#ffffff" opacity="0.28" />
+  <rect x="624" y="278" width="220" height="12" rx="6" fill="#ffffff" opacity="0.18" />
+  <rect x="624" y="320" width="304" height="36" rx="18" fill="url(#nglow)" />
+</svg>
