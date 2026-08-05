@@ -10,7 +10,7 @@ export function Projects() {
       <SectionHeading
         eyebrow="Projects"
         title="Websites and dashboards running in production"
-        description="Nine delivered projects spanning marketing sites, admin panels and full management systems — each linked to its live site or source code."
+        description="Ten delivered projects spanning marketing sites, e-commerce, admin panels and full management systems — each linked to its live site or source code."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">

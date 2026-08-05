@@ -7,6 +7,7 @@ import applylawImg from "@/assets/project-applylaw.jpg";
 import nannyImg from "@/assets/project-nanny.svg";
 import mnextImg from "@/assets/project-mnext.svg";
 import kidskloudImg from "@/assets/project-kidskloud.svg";
+import shoppingImg from "@/assets/project-shopping.svg";
 
 export const profile = {
   name: "Shivani Patel",
@@ -230,6 +231,23 @@ export const projects: Project[] = [
     features: ["Business management modules", "KPI dashboard", "Reusable table & form system"],
   },
   {
+    title: "Online Shopping Application",
+    category: "Live Project",
+    image: shoppingImg,
+    description:
+      "E-commerce storefront with product listings, category filters, product detail pages and a working cart and checkout flow.",
+    tech: ["React.js", "Tailwind CSS", "React Router", "Context API", "REST APIs"],
+    features: [
+      "Product catalog with search & category filters",
+      "Product detail pages",
+      "Add to cart, quantity and price totals",
+      "Checkout flow",
+      "Fully responsive shopping UI",
+    ],
+    live: "https://shopping-online-webs.netlify.app",
+    repo: "https://github.com/Patel1shivani/Shopping-app",
+  },
+  {
     title: "School Management Website",
     category: "Client Project",
     image: schoolImg,
@@ -237,6 +255,7 @@ export const projects: Project[] = [
       "Responsive school website with a modern UI and dynamic content pages for academics, admissions and events.",
     tech: ["React.js", "Tailwind CSS", "React Router"],
     features: ["Responsive school website", "Modern UI", "Dynamic pages"],
+    live: "https://schoole-project.netlify.app/",
     repo: "https://github.com/Patel1shivani/School_web",
   },
   {
@@ -247,6 +266,7 @@ export const projects: Project[] = [
       "Responsive restaurant website with an appetising menu experience and a table booking section.",
     tech: ["React.js", "CSS3", "Bootstrap", "Node.js"],
     features: ["Responsive restaurant website", "Menu", "Booking section", "Node.js backend"],
+    live: "https://resaturant-web.netlify.app/",
     repo: "https://github.com/Patel1shivani/Resaturant-web",
   },
 ];
@@ -284,7 +304,7 @@ export const services = [
 
 export const achievements = [
   { value: "2+", label: "Years of Professional Experience" },
-  { value: "9+", label: "Live Projects Delivered" },
+  { value: "10+", label: "Live Projects Delivered" },
   { value: "100%", label: "Production-Level Applications" },
   { value: "React", label: "Strong Ecosystem Knowledge" },
 ];
