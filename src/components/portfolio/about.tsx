@@ -6,76 +6,82 @@ import { Reveal } from "./reveal";
 const pillars = [
   {
     icon: Layers,
-    title: "Component thinking",
-    text: "Reusable, well-typed components and shared layouts that keep large codebases predictable.",
+    title: "Full-stack thinking",
+    text: "One mental model from the React component down to the Express route and the MongoDB document.",
   },
   {
     icon: Brain,
     title: "Problem solving",
-    text: "Debugging tricky UI state, API edge cases and performance bottlenecks until the flow feels effortless.",
+    text: "Debugging tricky UI state, API edge cases and data flows until the whole feature feels effortless.",
   },
   {
     icon: Users,
     title: "Teamwork",
-    text: "Daily collaboration with backend developers, designers and QA to ship on schedule.",
+    text: "Daily collaboration with senior developers, designers and QA on real client deliverables.",
   },
   {
     icon: Rocket,
     title: "Continuous learning",
-    text: "Constantly refining my grasp of the React ecosystem, tooling and modern CSS.",
+    text: "Steadily widening my stack — Next.js, GraphQL, Docker and cloud deployment on AWS and GCP.",
   },
 ];
+
+const degree = education[0];
 
 export function About() {
   return (
     <section id="about" className="section-shell">
       <SectionHeading
         eyebrow="About me"
-        title="A React developer who cares about how the interface feels"
+        title="A MERN developer who owns the feature end to end"
       />
 
       <div className="mt-12">
         <Reveal className="text-base leading-relaxed text-muted-foreground lg:columns-2 lg:gap-12 [&>p]:mb-5 [&>p]:break-inside-avoid lg:[&>p:last-child]:mb-0">
           <p>
-            My name is <span className="font-semibold text-foreground">{profile.name}</span> and I am a
-            passionate React.js developer with over two years of experience building responsive,
-            scalable and user-friendly web applications.
+            My name is <span className="font-semibold text-foreground">{profile.name}</span> and I am
+            a dedicated MERN stack developer with a strong foundation in frontend and full-stack
+            development, building responsive, scalable and user-friendly web applications.
           </p>
           <p>
-            I completed my{" "}
-            <span className="font-semibold text-foreground">{education.degree}</span> from{" "}
-            <span className="font-semibold text-foreground">{education.institute}</span>,{" "}
-            {education.location.replace(", India", "")}, in {education.year}. During my academic
-            journey I developed a strong interest in web development, which motivated me to build a
-            career in the software industry.
+            I completed my <span className="font-semibold text-foreground">{degree.degree}</span> at{" "}
+            <span className="font-semibold text-foreground">{degree.institute}</span>,{" "}
+            {degree.location.replace(", India", "")}, in {degree.year}, after a{" "}
+            <span className="font-semibold text-foreground">DCA from MCRPV Bhopal</span>. That mix of
+            fundamentals and hands-on practice is what pulled me into web development as a career.
           </p>
           <p>
-            I began as a{" "}
-            <span className="font-semibold text-foreground">MERN Stack Intern at Siya Technology</span>
-            , working hands-on with JavaScript, React.js, Node.js, Express.js and MongoDB across
-            practice builds and live projects, while attending client meetings and collaborating with
-            cross-functional teams. I then joined{" "}
-            <span className="font-semibold text-foreground">Technoriz Software Solution</span> as a
-            Junior React Developer, where I built responsive applications, reusable components and REST
-            API integrations.
+            I started with remote internships at{" "}
+            <span className="font-semibold text-foreground">Unified Mentors</span> and{" "}
+            <span className="font-semibold text-foreground">Code Alpha</span>, building full-stack
+            practice applications and responsive interfaces, and I continue to work remotely with{" "}
+            <span className="font-semibold text-foreground">The Developers Arena</span> on assigned
+            web modules delivered against weekly sprint deadlines.
           </p>
           <p>
-            Today I work as a React Developer at{" "}
-            <span className="font-semibold text-foreground">{profile.company}</span> in Indore, where I
-            have completed one year building production-ready applications for real clients — clean
-            responsive UI, reusable components, Redux Toolkit state layers and REST API integrations,
-            alongside backend developers, designers and QA.
+            I joined <span className="font-semibold text-foreground">{profile.company}</span> in
+            Indore as an onsite intern and converted that six-month internship into a full-time
+            on-role position as a{" "}
+            <span className="font-semibold text-foreground">Junior MERN Stack Developer</span> —
+            building responsive React interfaces, Express REST endpoints and Mongoose data models on
+            live client work.
           </p>
           <p>
-            I have delivered live client projects and admin dashboards across childcare booking, travel
-            management, healthcare, e-learning, business operations, legal consultation and property
-            rental — practical experience with role-based authentication, payment integrations,
-            data-heavy dashboards, form validation and performance optimisation on every device.
+            Today I handle development on a live tractor platform project end to end: scoping
+            features with the client, designing the API and data models, building the interface and
+            keeping the codebase clean and scalable as it grows.
           </p>
           <p>
-            I care about clean, maintainable and scalable code, enjoy solving complex UI and state
-            problems, and adapt quickly to new business requirements. My goal is to keep growing as a
-            frontend engineer while expanding my expertise across the MERN stack.
+            My work spans client platforms across healthcare, business operations and e-learning —
+            Share To Care, Bizlaxy and KidsKloud — alongside my own builds: a full-stack job portal
+            with real-time application tracking, a cafe website with an authenticated admin panel and
+            a drag-and-drop task manager. Practical experience with authentication, CRUD APIs,
+            WebSockets, file uploads, form validation and SQL as well as NoSQL databases.
+          </p>
+          <p>
+            I care about clean, maintainable and scalable code, adapt quickly to new requirements,
+            and I am excited to keep growing into AI-driven applications and cloud-based solutions on
+            AWS and GCP.
           </p>
         </Reveal>
 

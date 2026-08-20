@@ -19,8 +19,8 @@ export function Contact() {
       <div className="relative">
         <SectionHeading
           eyebrow="Contact"
-          title="Let's build something responsive together"
-          description="Open to React.js frontend roles, dashboard builds and freelance projects."
+          title="Let's build something end to end"
+          description="Open to MERN stack developer roles, full-stack builds and freelance projects."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
@@ -52,6 +52,9 @@ export function Contact() {
                   Phone
                 </span>
                 <span className="block truncate text-sm font-medium">{profile.phone}</span>
+                <span className="block truncate text-xs text-muted-foreground">
+                  Alt · {profile.phoneAlt}
+                </span>
               </span>
             </a>
 
@@ -68,15 +71,17 @@ export function Contact() {
             </div>
 
             <div className="flex gap-3">
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="LinkedIn profile"
-                className="glass grid h-12 flex-1 place-items-center rounded-2xl text-lg transition-colors hover:text-primary"
-              >
-                <FaLinkedinIn />
-              </a>
+              {profile.linkedin ? (
+                <a
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="LinkedIn profile"
+                  className="glass grid h-12 flex-1 place-items-center rounded-2xl text-lg transition-colors hover:text-primary"
+                >
+                  <FaLinkedinIn />
+                </a>
+              ) : null}
               <a
                 href={profile.github}
                 target="_blank"

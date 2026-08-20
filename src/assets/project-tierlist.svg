@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 440" width="1024" height="440" role="img" aria-label="Tier list web app preview">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1230" />
+      <stop offset="54%" stop-color="#232a6b" />
+      <stop offset="100%" stop-color="#4b3fa6" />
+    </linearGradient>
+    <linearGradient id="lglow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="55%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <radialGradient id="lspot" cx="0.5" cy="0.05" r="0.8">
+      <stop offset="0%" stop-color="#e0e7ff" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#e0e7ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="440" fill="url(#lbg)" />
+  <rect width="1024" height="440" fill="url(#lspot)" />
+  <circle cx="120" cy="70" r="140" fill="#22d3ee" opacity="0.11" />
+  <circle cx="930" cy="410" r="150" fill="#f472b6" opacity="0.1" />
+
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="#ffffff" opacity="0.07" />
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.16" />
+
+  <!-- header -->
+  <rect x="68" y="50" width="32" height="32" rx="11" fill="url(#lglow)" />
+  <rect x="112" y="60" width="118" height="12" rx="6" fill="#ffffff" opacity="0.46" />
+  <rect x="812" y="52" width="136" height="30" rx="15" fill="#ffffff" opacity="0.14" />
+  <rect x="842" y="62" width="76" height="10" rx="5" fill="#ffffff" opacity="0.3" />
+
+  <!-- tier rows -->
+  <g>
+    <rect x="68" y="104" width="880" height="66" rx="14" fill="#ffffff" opacity="0.08" />
+    <rect x="68" y="104" width="86" height="66" rx="14" fill="#fb7185" opacity="0.55" />
+    <rect x="98" y="130" width="26" height="14" rx="7" fill="#0b1230" opacity="0.45" />
+    <rect x="176" y="120" width="58" height="34" rx="10" fill="url(#lglow)" opacity="0.5" />
+    <rect x="246" y="120" width="58" height="34" rx="10" fill="#ffffff" opacity="0.22" />
+    <rect x="316" y="120" width="58" height="34" rx="10" fill="#ffffff" opacity="0.22" />
+    <rect x="386" y="120" width="58" height="34" rx="10" fill="#ffffff" opacity="0.16" />
+  </g>
+
+  <g>
+    <rect x="68" y="182" width="880" height="66" rx="14" fill="#ffffff" opacity="0.07" />
+    <rect x="68" y="182" width="86" height="66" rx="14" fill="#fbbf24" opacity="0.5" />
+    <rect x="98" y="208" width="26" height="14" rx="7" fill="#0b1230" opacity="0.45" />
+    <rect x="176" y="198" width="58" height="34" rx="10" fill="#ffffff" opacity="0.2" />
+    <rect x="246" y="198" width="58" height="34" rx="10" fill="#ffffff" opacity="0.2" />
+    <rect x="316" y="198" width="58" height="34" rx="10" fill="#ffffff" opacity="0.14" />
+
+    <!-- dragged tile -->
+    <rect x="470" y="190" width="70" height="42" rx="12" fill="url(#lglow)" opacity="0.45" />
+    <rect x="470" y="190" width="70" height="42" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-dasharray="7 6" />
+    <circle cx="548" cy="236" r="9" fill="#ffffff" opacity="0.45" />
+  </g>
+
+  <g>
+    <rect x="68" y="260" width="880" height="66" rx="14" fill="#ffffff" opacity="0.07" />
+    <rect x="68" y="260" width="86" height="66" rx="14" fill="#4ade80" opacity="0.45" />
+    <rect x="98" y="286" width="26" height="14" rx="7" fill="#0b1230" opacity="0.45" />
+    <rect x="176" y="276" width="58" height="34" rx="10" fill="#ffffff" opacity="0.18" />
+    <rect x="246" y="276" width="58" height="34" rx="10" fill="#ffffff" opacity="0.14" />
+  </g>
+
+  <g>
+    <rect x="68" y="338" width="880" height="58" rx="14" fill="#ffffff" opacity="0.06" />
+    <rect x="68" y="338" width="86" height="58" rx="14" fill="#38bdf8" opacity="0.4" />
+    <rect x="98" y="360" width="26" height="14" rx="7" fill="#0b1230" opacity="0.45" />
+    <rect x="176" y="352" width="58" height="30" rx="10" fill="#ffffff" opacity="0.14" />
+  </g>
+
+  <!-- unranked tray -->
+  <g>
+    <rect x="628" y="264" width="320" height="132" rx="16" fill="#ffffff" opacity="0.09" />
+    <rect x="652" y="284" width="92" height="10" rx="5" fill="#ffffff" opacity="0.34" />
+    <rect x="652" y="310" width="58" height="34" rx="10" fill="#ffffff" opacity="0.2" />
+    <rect x="722" y="310" width="58" height="34" rx="10" fill="#ffffff" opacity="0.2" />
+    <rect x="792" y="310" width="58" height="34" rx="10" fill="#ffffff" opacity="0.16" />
+    <rect x="862" y="310" width="58" height="34" rx="10" fill="#ffffff" opacity="0.16" />
+    <rect x="652" y="356" width="58" height="28" rx="10" fill="#ffffff" opacity="0.12" />
+    <rect x="722" y="356" width="58" height="28" rx="10" fill="#ffffff" opacity="0.12" />
+  </g>
+</svg>

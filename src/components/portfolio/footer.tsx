@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <div className="flex min-w-0 items-center gap-3">
             <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-brand font-display text-sm font-bold text-primary-foreground">
-              SP
+              {profile.initials}
             </span>
             <span className="truncate font-display text-base font-bold">{profile.name}</span>
           </div>
@@ -33,15 +33,17 @@ export function Footer() {
         </nav>
 
         <div className="flex gap-3 lg:justify-end">
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="LinkedIn profile"
-            className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-primary"
-          >
-            <FaLinkedinIn />
-          </a>
+          {profile.linkedin ? (
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn profile"
+              className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-primary"
+            >
+              <FaLinkedinIn />
+            </a>
+          ) : null}
           <a
             href={profile.github}
             target="_blank"

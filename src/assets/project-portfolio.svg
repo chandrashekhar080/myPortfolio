@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 440" width="1024" height="440" role="img" aria-label="Portfolio website preview">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b0b34" />
+      <stop offset="54%" stop-color="#3a1a72" />
+      <stop offset="100%" stop-color="#6d2f9c" />
+    </linearGradient>
+    <linearGradient id="pglow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="55%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <radialGradient id="pspot" cx="0.5" cy="0.05" r="0.8">
+      <stop offset="0%" stop-color="#ede9fe" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#ede9fe" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="440" fill="url(#pbg)" />
+  <rect width="1024" height="440" fill="url(#pspot)" />
+  <circle cx="120" cy="70" r="140" fill="#a78bfa" opacity="0.13" />
+  <circle cx="930" cy="400" r="150" fill="#38bdf8" opacity="0.1" />
+
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="#ffffff" opacity="0.07" />
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.16" />
+
+  <!-- floating nav pill -->
+  <rect x="240" y="46" width="544" height="40" rx="20" fill="#ffffff" opacity="0.1" />
+  <circle cx="272" cy="66" r="13" fill="url(#pglow)" />
+  <rect x="296" y="61" width="84" height="10" rx="5" fill="#ffffff" opacity="0.4" />
+  <g fill="#ffffff" opacity="0.22">
+    <rect x="456" y="61" width="48" height="10" rx="5" />
+    <rect x="520" y="61" width="52" height="10" rx="5" />
+    <rect x="588" y="61" width="60" height="10" rx="5" />
+  </g>
+  <rect x="668" y="54" width="94" height="24" rx="12" fill="url(#pglow)" opacity="0.85" />
+
+  <!-- hero left -->
+  <rect x="84" y="132" width="150" height="24" rx="12" fill="#ffffff" opacity="0.14" />
+  <rect x="84" y="176" width="330" height="22" rx="11" fill="#ffffff" opacity="0.52" />
+  <rect x="84" y="210" width="252" height="22" rx="11" fill="url(#pglow)" opacity="0.7" />
+  <rect x="84" y="256" width="296" height="10" rx="5" fill="#ffffff" opacity="0.2" />
+  <rect x="84" y="276" width="238" height="10" rx="5" fill="#ffffff" opacity="0.2" />
+  <rect x="84" y="312" width="130" height="32" rx="16" fill="url(#pglow)" opacity="0.85" />
+  <rect x="228" y="312" width="118" height="32" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2" />
+
+  <!-- stats row -->
+  <g fill="#ffffff">
+    <rect x="84" y="372" width="58" height="14" rx="7" opacity="0.34" />
+    <rect x="168" y="372" width="58" height="14" rx="7" opacity="0.24" />
+    <rect x="252" y="372" width="58" height="14" rx="7" opacity="0.18" />
+  </g>
+
+  <!-- code card right -->
+  <rect x="470" y="120" width="478" height="268" rx="22" fill="#ffffff" opacity="0.1" />
+  <rect x="470" y="120" width="478" height="268" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.18" />
+  <circle cx="500" cy="150" r="6" fill="#f87171" opacity="0.7" />
+  <circle cx="520" cy="150" r="6" fill="#fbbf24" opacity="0.7" />
+  <circle cx="540" cy="150" r="6" fill="#34d399" opacity="0.7" />
+  <rect x="560" y="145" width="96" height="10" rx="5" fill="#ffffff" opacity="0.18" />
+  <g fill="#ffffff">
+    <rect x="500" y="186" width="180" height="10" rx="5" opacity="0.36" />
+    <rect x="520" y="210" width="240" height="10" rx="5" opacity="0.22" />
+    <rect x="520" y="234" width="196" height="10" rx="5" opacity="0.22" />
+    <rect x="520" y="258" width="272" height="10" rx="5" opacity="0.18" />
+    <rect x="520" y="282" width="164" height="10" rx="5" opacity="0.18" />
+    <rect x="500" y="306" width="120" height="10" rx="5" opacity="0.3" />
+  </g>
+  <rect x="500" y="340" width="128" height="26" rx="13" fill="url(#pglow)" opacity="0.4" />
+  <rect x="642" y="340" width="128" height="26" rx="13" fill="#ffffff" opacity="0.12" />
+  <rect x="784" y="340" width="134" height="26" rx="13" fill="#ffffff" opacity="0.12" />
+</svg>

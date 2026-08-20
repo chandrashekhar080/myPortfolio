@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 440" width="1024" height="440" role="img" aria-label="Red Bus booking web app preview">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a0710" />
+      <stop offset="54%" stop-color="#7a1225" />
+      <stop offset="100%" stop-color="#b93b2c" />
+    </linearGradient>
+    <linearGradient id="rglow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="55%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <radialGradient id="rspot" cx="0.5" cy="0.05" r="0.8">
+      <stop offset="0%" stop-color="#fecdd3" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#fecdd3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="440" fill="url(#rbg)" />
+  <rect width="1024" height="440" fill="url(#rspot)" />
+  <circle cx="120" cy="70" r="140" fill="#fb7185" opacity="0.12" />
+  <circle cx="930" cy="410" r="150" fill="#fbbf24" opacity="0.1" />
+
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="#ffffff" opacity="0.07" />
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.16" />
+
+  <!-- nav -->
+  <rect x="68" y="50" width="32" height="32" rx="11" fill="url(#rglow)" />
+  <rect x="112" y="60" width="100" height="12" rx="6" fill="#ffffff" opacity="0.46" />
+  <g fill="#ffffff" opacity="0.22">
+    <rect x="700" y="61" width="52" height="10" rx="5" />
+    <rect x="768" y="61" width="60" height="10" rx="5" />
+  </g>
+  <rect x="852" y="52" width="96" height="30" rx="15" fill="url(#rglow)" opacity="0.85" />
+
+  <!-- search bar: from / to / date -->
+  <rect x="68" y="106" width="880" height="62" rx="18" fill="#ffffff" opacity="0.11" />
+  <rect x="92" y="126" width="212" height="22" rx="11" fill="#ffffff" opacity="0.16" />
+  <rect x="108" y="132" width="120" height="10" rx="5" fill="#ffffff" opacity="0.34" />
+  <circle cx="330" cy="137" r="14" fill="#ffffff" opacity="0.16" />
+  <path d="M323 137 h14 M331 131 l7 6 l-7 6" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="356" y="126" width="212" height="22" rx="11" fill="#ffffff" opacity="0.16" />
+  <rect x="372" y="132" width="132" height="10" rx="5" fill="#ffffff" opacity="0.34" />
+  <rect x="596" y="126" width="180" height="22" rx="11" fill="#ffffff" opacity="0.14" />
+  <rect x="612" y="132" width="96" height="10" rx="5" fill="#ffffff" opacity="0.28" />
+  <rect x="804" y="120" width="120" height="34" rx="17" fill="url(#rglow)" opacity="0.9" />
+  <rect x="832" y="132" width="64" height="10" rx="5" fill="#3a0710" opacity="0.5" />
+
+  <!-- trip list -->
+  <g>
+    <rect x="68" y="192" width="520" height="88" rx="18" fill="#ffffff" opacity="0.11" />
+    <rect x="92" y="214" width="150" height="12" rx="6" fill="#ffffff" opacity="0.44" />
+    <rect x="92" y="240" width="220" height="9" rx="4.5" fill="#ffffff" opacity="0.2" />
+    <rect x="92" y="256" width="164" height="9" rx="4.5" fill="#ffffff" opacity="0.16" />
+    <rect x="452" y="212" width="112" height="16" rx="8" fill="url(#rglow)" opacity="0.6" />
+    <rect x="466" y="244" width="98" height="10" rx="5" fill="#ffffff" opacity="0.24" />
+  </g>
+  <g>
+    <rect x="68" y="296" width="520" height="88" rx="18" fill="#ffffff" opacity="0.08" />
+    <rect x="92" y="318" width="132" height="12" rx="6" fill="#ffffff" opacity="0.34" />
+    <rect x="92" y="344" width="198" height="9" rx="4.5" fill="#ffffff" opacity="0.18" />
+    <rect x="92" y="360" width="150" height="9" rx="4.5" fill="#ffffff" opacity="0.14" />
+    <rect x="452" y="316" width="112" height="16" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="466" y="348" width="98" height="10" rx="5" fill="#ffffff" opacity="0.18" />
+  </g>
+
+  <!-- seat map -->
+  <rect x="612" y="192" width="336" height="192" rx="18" fill="#ffffff" opacity="0.09" />
+  <rect x="636" y="214" width="96" height="11" rx="5.5" fill="#ffffff" opacity="0.4" />
+  <path d="M900 208 a18 18 0 0 1 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="5" />
+  <g>
+    <rect x="636" y="246" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="680" y="246" width="34" height="30" rx="8" fill="url(#rglow)" opacity="0.65" />
+    <rect x="740" y="246" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="784" y="246" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="844" y="246" width="34" height="30" rx="8" fill="#ffffff" opacity="0.12" />
+    <rect x="888" y="246" width="34" height="30" rx="8" fill="#ffffff" opacity="0.12" />
+
+    <rect x="636" y="288" width="34" height="30" rx="8" fill="#ffffff" opacity="0.12" />
+    <rect x="680" y="288" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="740" y="288" width="34" height="30" rx="8" fill="url(#rglow)" opacity="0.45" />
+    <rect x="784" y="288" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="844" y="288" width="34" height="30" rx="8" fill="#ffffff" opacity="0.2" />
+    <rect x="888" y="288" width="34" height="30" rx="8" fill="#ffffff" opacity="0.12" />
+  </g>
+  <rect x="636" y="342" width="286" height="26" rx="13" fill="url(#rglow)" opacity="0.5" />
+</svg>

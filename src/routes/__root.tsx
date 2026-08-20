@@ -73,18 +73,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shivani Patel — React.js Frontend Developer" },
+      { title: "Chandrashekhar Ghosh — MERN Stack Developer" },
       {
         name: "description",
         content:
-          "Portfolio of Shivani Patel, React.js frontend developer in Indore, India, with 2+ years of experience.",
+          "Portfolio of Chandrashekhar Ghosh, MERN stack developer in Indore, India, building full-stack web applications with React, Next.js, Node.js and MongoDB.",
       },
-      { name: "author", content: "Shivani Patel" },
-      { property: "og:title", content: "Shivani Patel — React.js Frontend Developer" },
+      { name: "author", content: "Chandrashekhar Ghosh" },
+      { property: "og:title", content: "Chandrashekhar Ghosh — MERN Stack Developer" },
       {
         property: "og:description",
         content:
-          "Portfolio of Shivani Patel, React.js frontend developer in Indore, India, with 2+ years of experience.",
+          "Portfolio of Chandrashekhar Ghosh, MERN stack developer in Indore, India, building full-stack web applications with React, Next.js, Node.js and MongoDB.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

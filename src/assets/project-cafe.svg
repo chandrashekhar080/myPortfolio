@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 440" width="1024" height="440" role="img" aria-label="BBC Cafe website preview">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1508" />
+      <stop offset="54%" stop-color="#5a2d10" />
+      <stop offset="100%" stop-color="#94551c" />
+    </linearGradient>
+    <linearGradient id="cglow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="55%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <radialGradient id="cspot" cx="0.5" cy="0.05" r="0.8">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#fde68a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="440" fill="url(#cbg)" />
+  <rect width="1024" height="440" fill="url(#cspot)" />
+  <circle cx="120" cy="70" r="130" fill="#fbbf24" opacity="0.12" />
+  <circle cx="940" cy="400" r="150" fill="#f472b6" opacity="0.1" />
+
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="#ffffff" opacity="0.07" />
+  <rect x="44" y="26" width="936" height="388" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.16" />
+
+  <!-- nav -->
+  <circle cx="86" cy="66" r="16" fill="url(#cglow)" />
+  <rect x="112" y="60" width="96" height="12" rx="6" fill="#ffffff" opacity="0.46" />
+  <g fill="#ffffff" opacity="0.22">
+    <rect x="520" y="61" width="58" height="10" rx="5" />
+    <rect x="598" y="61" width="48" height="10" rx="5" />
+    <rect x="666" y="61" width="66" height="10" rx="5" />
+  </g>
+  <rect x="836" y="52" width="112" height="30" rx="15" fill="url(#cglow)" opacity="0.85" />
+  <rect x="862" y="62" width="60" height="10" rx="5" fill="#2a1508" opacity="0.5" />
+
+  <!-- hero copy -->
+  <rect x="68" y="118" width="300" height="18" rx="9" fill="#ffffff" opacity="0.5" />
+  <rect x="68" y="150" width="228" height="18" rx="9" fill="#ffffff" opacity="0.32" />
+  <rect x="68" y="192" width="264" height="10" rx="5" fill="#ffffff" opacity="0.2" />
+  <rect x="68" y="212" width="204" height="10" rx="5" fill="#ffffff" opacity="0.2" />
+  <rect x="68" y="248" width="128" height="30" rx="15" fill="url(#cglow)" opacity="0.8" />
+
+  <!-- coffee cup mark -->
+  <g transform="translate(150 318)">
+    <path d="M0 0 h96 v34 a30 30 0 0 1 -30 30 h-36 a30 30 0 0 1 -30 -30 z" fill="#ffffff" opacity="0.16" />
+    <path d="M96 8 h16 a18 18 0 0 1 0 36 h-16" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="7" />
+    <path d="M20 -18 c0 -12 12 -14 12 -26" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round" />
+    <path d="M48 -18 c0 -12 12 -14 12 -26" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round" />
+    <rect x="-14" y="66" width="124" height="7" rx="3.5" fill="#ffffff" opacity="0.2" />
+  </g>
+
+  <!-- menu cards -->
+  <g>
+    <rect x="424" y="112" width="164" height="140" rx="18" fill="#ffffff" opacity="0.11" />
+    <rect x="444" y="132" width="124" height="62" rx="12" fill="url(#cglow)" opacity="0.45" />
+    <rect x="444" y="206" width="98" height="10" rx="5" fill="#ffffff" opacity="0.36" />
+    <rect x="444" y="226" width="56" height="10" rx="5" fill="#ffffff" opacity="0.2" />
+  </g>
+  <g>
+    <rect x="606" y="112" width="164" height="140" rx="18" fill="#ffffff" opacity="0.09" />
+    <rect x="626" y="132" width="124" height="62" rx="12" fill="#ffffff" opacity="0.22" />
+    <rect x="626" y="206" width="86" height="10" rx="5" fill="#ffffff" opacity="0.32" />
+    <rect x="626" y="226" width="52" height="10" rx="5" fill="#ffffff" opacity="0.18" />
+  </g>
+  <g>
+    <rect x="788" y="112" width="164" height="140" rx="18" fill="#ffffff" opacity="0.09" />
+    <rect x="808" y="132" width="124" height="62" rx="12" fill="#ffffff" opacity="0.22" />
+    <rect x="808" y="206" width="104" height="10" rx="5" fill="#ffffff" opacity="0.32" />
+    <rect x="808" y="226" width="48" height="10" rx="5" fill="#ffffff" opacity="0.18" />
+  </g>
+
+  <!-- admin table strip -->
+  <rect x="424" y="272" width="528" height="124" rx="18" fill="#ffffff" opacity="0.08" />
+  <rect x="448" y="294" width="118" height="11" rx="5.5" fill="#ffffff" opacity="0.4" />
+  <g fill="#ffffff" opacity="0.18">
+    <rect x="448" y="326" width="480" height="1.5" />
+    <rect x="448" y="340" width="132" height="9" rx="4.5" />
+    <rect x="620" y="340" width="96" height="9" rx="4.5" />
+    <rect x="768" y="340" width="72" height="9" rx="4.5" />
+    <rect x="448" y="366" width="480" height="1.5" />
+    <rect x="448" y="380" width="112" height="9" rx="4.5" />
+    <rect x="620" y="380" width="118" height="9" rx="4.5" />
+    <rect x="768" y="380" width="64" height="9" rx="4.5" />
+  </g>
+  <rect x="874" y="336" width="54" height="18" rx="9" fill="#4ade80" opacity="0.45" />
+  <rect x="874" y="376" width="54" height="18" rx="9" fill="#fbbf24" opacity="0.45" />
+</svg>

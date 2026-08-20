@@ -1,6 +1,6 @@
-# Shivani Patel — Portfolio
+# Chandrashekhar Ghosh — Portfolio
 
-Personal portfolio site for Shivani Patel, React.js frontend developer based in Indore, India.
+Personal portfolio site for Chandrashekhar Ghosh, MERN stack developer based in Indore, India.
 
 ## Tech stack
 

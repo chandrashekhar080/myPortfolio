@@ -35,7 +35,7 @@ function useTypedText(words: readonly string[]) {
   return text;
 }
 
-const stack = ["React.js", "Redux Toolkit", "Tailwind CSS", "Material UI", "REST APIs", "Node.js"];
+const stack = ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"];
 
 export function Hero() {
   const typed = useTypedText(typedRoles);
@@ -62,7 +62,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-glass-border glass px-3.5 py-1.5 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-primary"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            Available for frontend work
+            Available for full-stack work
           </motion.span>
 
           <motion.h1
@@ -72,7 +72,7 @@ export function Hero() {
             className="mt-6 text-[2.6rem] font-bold leading-[1.02] sm:text-6xl lg:text-[4.25rem]"
           >
             {profile.name}
-            <span className="mt-2 block text-gradient">React.js Developer</span>
+            <span className="mt-2 block text-gradient">MERN Stack Developer</span>
           </motion.h1>
 
           <p className="mt-5 font-mono text-sm text-muted-foreground sm:text-base" aria-live="polite">
@@ -110,9 +110,9 @@ export function Hero() {
             </div>
             <div>
               <dt className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-muted-foreground">
-                Live projects
+                Projects built
               </dt>
-              <dd className="mt-1 font-display text-xl font-bold">10+</dd>
+              <dd className="mt-1 font-display text-xl font-bold">9+</dd>
             </div>
             <div className="col-span-2 sm:col-span-1">
               <dt className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-muted-foreground">
@@ -142,11 +142,11 @@ export function Hero() {
               </span>
             </div>
             <pre className="mt-4 overflow-x-auto font-mono text-[0.72rem] leading-6 text-muted-foreground sm:text-xs">
-              <code>{`const shivani = {
-  role: "React.js Developer",
-  company: "Fovty Software Solution",
-  experience: "2+ years",
-  focus: ["UI", "Dashboards", "APIs"],
+              <code>{`const chandrashekhar = {
+  role: "MERN Stack Developer",
+  company: "Fovty Solutions",
+  stack: ["React", "Node", "Express", "MongoDB"],
+  focus: ["UI", "REST APIs", "Databases"],
   ships: () => "clean, scalable code",
 };`}</code>
             </pre>
@@ -165,8 +165,10 @@ export function Hero() {
             aria-hidden
             className="absolute -bottom-6 -right-3 hidden rounded-2xl bg-gradient-brand px-4 py-3 text-primary-foreground shadow-glow sm:block"
           >
-            <p className="font-display text-lg font-bold leading-none">1 Yr</p>
-            <p className="font-mono text-[0.6rem] uppercase tracking-[0.14em] opacity-80">@ Fovty</p>
+            <p className="font-display text-lg font-bold leading-none">MERN</p>
+            <p className="font-mono text-[0.6rem] uppercase tracking-[0.14em] opacity-80">
+              Full Stack
+            </p>
           </div>
         </motion.div>
       </div>

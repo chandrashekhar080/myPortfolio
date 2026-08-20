@@ -1,130 +1,209 @@
-import schoolImg from "@/assets/project-school.jpg";
-import restaurantImg from "@/assets/project-restaurant.jpg";
-import travelImg from "@/assets/project-travel.jpg";
+import cafeImg from "@/assets/project-cafe.svg";
+import tierlistImg from "@/assets/project-tierlist.svg";
+import redbusImg from "@/assets/project-redbus.svg";
+import portfolioImg from "@/assets/project-portfolio.svg";
+import taskImg from "@/assets/project-task.svg";
+import jobportalImg from "@/assets/project-jobportal.svg";
 import healthcareImg from "@/assets/project-healthcare.jpg";
 import bizlaxyImg from "@/assets/project-bizlaxy.jpg";
-import applylawImg from "@/assets/project-applylaw.jpg";
-import nannyImg from "@/assets/project-nanny.svg";
-import mnextImg from "@/assets/project-mnext.svg";
 import kidskloudImg from "@/assets/project-kidskloud.svg";
-import shoppingImg from "@/assets/project-shopping.svg";
 
 export const profile = {
-  name: "Shivani Patel",
-  title: "React.js Frontend Developer",
-  experience: "2+ Years",
-  location: "Indore, Madhya Pradesh, India",
-  tagline: "Building Modern, Responsive & Scalable Web Applications with React.js.",
-  email: "shivanipatel7180@gmail.com",
-  phone: "+91 7489099533",
-  linkedin: "https://www.linkedin.com/in/shivani-patel-450164273/",
-  github: "https://github.com/Patel1shivani",
-  company: "Fovty Software Solution Pvt. Ltd.",
+  name: "Chandrashekhar Ghosh",
+  initials: "CG",
+  title: "MERN Stack Developer",
+  experience: "1.5+ Years",
+  location: "Ganesh Nagar, Indore, Madhya Pradesh, India",
+  tagline: "Building full-stack web applications with React, Next.js, Node.js, Express and MongoDB.",
+  email: "0810chandrashekhar@gmail.com",
+  phone: "+91 8959281584",
+  phoneAlt: "+91 8962504009",
+  // TODO: confirm the exact profile URLs — the resume only lists the handle "ChandraShekhar_080"
+  // and carries no LinkedIn. An empty string hides that icon everywhere it is rendered.
+  linkedin: "",
+  github: "https://github.com/ChandraShekhar_080",
+  company: "Fovty Solutions Pvt. Ltd.",
 };
 
 export const typedRoles = [
-  "React.js Frontend Developer",
-  "Dashboard & Admin Panel Specialist",
-  "Responsive UI Engineer",
-  "REST API Integration Developer",
+  "MERN Stack Developer",
+  "React & Next.js Developer",
+  "Node.js & REST API Developer",
+  "Full-Stack Web Developer",
 ];
 
 export const skillGroups = [
   {
     label: "Frontend",
     skills: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 92 },
-      { name: "JavaScript (ES6+)", level: 90 },
-      { name: "React.js", level: 93 },
-      { name: "Redux Toolkit", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Material UI", level: 84 },
-      { name: "Bootstrap", level: 86 },
-      { name: "Responsive Design", level: 94 },
+      { name: "HTML5", level: 92 },
+      { name: "CSS3", level: 90 },
+      { name: "JavaScript (ES6+)", level: 88 },
+      { name: "React.js", level: 88 },
+      { name: "Next.js", level: 78 },
+      { name: "Redux Toolkit", level: 80 },
+      { name: "Tailwind CSS", level: 88 },
+      { name: "Bootstrap", level: 84 },
+      { name: "shadcn/ui", level: 76 },
+      { name: "Responsive Design", level: 90 },
     ],
   },
   {
     label: "Backend",
     skills: [
-      { name: "Node.js", level: 72 },
-      { name: "Express.js", level: 70 },
-      { name: "MongoDB", level: 74 },
-      { name: "REST APIs", level: 88 },
+      { name: "Node.js", level: 84 },
+      { name: "Express.js", level: 82 },
+      { name: "REST APIs", level: 86 },
+      { name: "GraphQL", level: 62 },
+      { name: "WebSockets", level: 70 },
+      { name: "Auth & JWT", level: 76 },
+      { name: "Mongoose", level: 78 },
+      { name: "CORS / DotEnv", level: 80 },
     ],
   },
   {
     label: "Database",
     skills: [
-      { name: "MongoDB", level: 74 },
-      { name: "SQL", level: 68 },
+      { name: "MongoDB", level: 82 },
+      { name: "MySQL", level: 76 },
+      { name: "PostgreSQL", level: 68 },
+      { name: "Firebase", level: 70 },
+      { name: "phpMyAdmin", level: 72 },
     ],
   },
   {
     label: "Tools",
     skills: [
-      { name: "VS Code", level: 95 },
-      { name: "Git", level: 88 },
-      { name: "GitHub", level: 88 },
-      { name: "Postman", level: 85 },
-      { name: "npm", level: 87 },
-      { name: "Chrome DevTools", level: 86 },
-      { name: "Figma (Basic)", level: 62 },
+      { name: "VS Code", level: 92 },
+      { name: "Git", level: 86 },
+      { name: "GitHub", level: 86 },
+      { name: "Postman", level: 84 },
+      { name: "Nodemon", level: 82 },
+      { name: "Docker", level: 60 },
+      { name: "Vercel", level: 78 },
+      { name: "AWS", level: 58 },
+      { name: "GCP", level: 55 },
     ],
   },
 ] as const;
 
-export const education = {
-  degree: "Bachelor of Technology (B.Tech.), Information Technology",
-  institute: "Swami Vivekanand College of Engineering",
-  location: "Indore, India",
-  year: "2024",
+export type Education = {
+  degree: string;
+  institute: string;
+  location: string;
+  year: string;
+  score: string;
 };
+
+export const education: Education[] = [
+  {
+    degree: "B.Sc. in Computer Science",
+    institute: "Govt. Holkar Science College",
+    location: "Indore, India",
+    year: "2024",
+    score: "68.0%",
+  },
+  {
+    degree: "DCA in Computer Applications",
+    institute: "MCRPV",
+    location: "Bhopal, India",
+    year: "2022",
+    score: "71.0%",
+  },
+  {
+    degree: "Class 12th (Mathematics)",
+    institute: "Govt. Excellence School No. 01",
+    location: "Khargone, India",
+    year: "2021",
+    score: "88.2%",
+  },
+  {
+    degree: "Class 10th",
+    institute: "SHSK Khamkheda",
+    location: "Khargone, India",
+    year: "2019",
+    score: "87.8%",
+  },
+];
 
 export const experience = [
   {
-    role: "React Developer",
-    company: "Fovty Software Solution Pvt. Ltd.",
-    location: "Indore, India",
-    duration: "June 2025 – Present",
+    role: "Junior MERN Stack Developer",
+    company: "Fovty Solutions Pvt. Ltd.",
+    location: "Indore, India · Onsite",
+    duration: "Nov 2025 – Present",
     responsibilities: [
-      "Build production-ready applications for real clients",
-      "Develop clean, responsive user interfaces",
-      "Create reusable components and design-system patterns",
-      "Manage application state with Redux Toolkit",
-      "Integrate REST APIs with loading, error and empty states",
-      "Implement role-based authentication and payment flows",
-      "Collaborate with backend developers, UI/UX designers and QA",
-      "Optimise performance and keep the codebase clean and scalable",
+      "Handle end-to-end development on a live tractor platform project",
+      "Own features across React, Express, Node.js and MongoDB",
+      "Design REST endpoints and the data models behind them",
+      "Translate client requirements into shippable, scoped work",
+      "Keep the codebase clean, reusable and scalable as it grows",
+      "Coordinate with designers, backend developers and QA through code review",
     ],
   },
   {
-    role: "Junior React Developer",
-    company: "Technoriz Software Solution",
-    location: "Indore, India",
-    duration: "2024 – 2025",
+    role: "Software Development Intern",
+    company: "Fovty Solutions Pvt. Ltd.",
+    location: "Indore, India · Onsite",
+    duration: "May 2025 – Oct 2025",
     responsibilities: [
-      "Developed responsive web applications with React.js",
-      "Created reusable React components for client projects",
-      "Integrated REST APIs into production interfaces",
-      "Fixed bugs and enhanced application performance",
-      "Followed modern development and code-review practices",
+      "Built and maintained features across the MERN stack on live client work",
+      "Developed responsive React interfaces from design handoffs",
+      "Wrote Express REST endpoints and wired them into the frontend",
+      "Modelled collections in MongoDB with Mongoose schemas",
+      "Handled loading, error and empty states on every data-driven view",
+      "Converted a six-month internship into a full-time on-role position",
     ],
   },
   {
-    role: "MERN Stack Intern",
-    company: "Siya Technology",
-    location: "Indore, India",
-    duration: "6 Months · 2024",
+    role: "Web Development Intern",
+    company: "The Developers Arena",
+    location: "Remote",
+    duration: "May 2025 – Present",
     responsibilities: [
-      "Worked hands-on with JavaScript, React.js, Node.js, Express.js and MongoDB",
-      "Contributed to both practice builds and live client projects",
-      "Attended client meetings and contributed to project discussions",
-      "Collaborated with cross-functional teams on real workflows",
-      "Strengthened communication and teamwork alongside technical skills",
+      "Build assigned web modules with React.js, Node.js and Express.js",
+      "Turn written requirements into reusable, well-structured components",
+      "Integrate REST APIs and verify them end to end with Postman",
+      "Deliver tasks against weekly sprint deadlines with mentor review",
+    ],
+  },
+  {
+    role: "Web Development Intern",
+    company: "Code Alpha Pvt. Ltd.",
+    location: "Remote",
+    duration: "April 2025",
+    responsibilities: [
+      "Completed a short, intensive frontend development track",
+      "Built responsive layouts with HTML, CSS, Bootstrap and JavaScript",
+      "Submitted working projects against a fixed review checklist",
+    ],
+  },
+  {
+    role: "Software Development Intern",
+    company: "Unified Mentors",
+    location: "Remote",
+    duration: "Dec 2024 – Mar 2025",
+    responsibilities: [
+      "Built full-stack practice applications on the MERN stack",
+      "Practised Git and GitHub workflows on every submission",
+      "Strengthened JavaScript fundamentals, DOM work and API handling",
     ],
   },
 ] as const;
+
+export type Certification = {
+  title: string;
+  issuer: string;
+  date: string;
+};
+
+export const certifications: Certification[] = [
+  { title: "Advanced Software Engineering", issuer: "Walmart Global Tech", date: "Dec 2024" },
+  { title: "Software Engineering", issuer: "Goldman Sachs", date: "Dec 2024" },
+  { title: "Software Engineering", issuer: "Accenture", date: "Dec 2024" },
+  { title: "Development & Advanced Engineering", issuer: "Accenture", date: "Dec 2024" },
+  { title: "Artificial Intelligence", issuer: "Cognizant", date: "Dec 2024" },
+];
 
 export type Project = {
   title: string;
@@ -139,162 +218,170 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Nanny Services Platform",
-    category: "Live Project",
-    image: nannyImg,
+    title: "Job Portal — Full Stack",
+    category: "Full Stack",
+    image: jobportalImg,
     description:
-      "Childcare marketplace connecting parents with vetted caregivers — search and filters, caregiver profiles, bookings, Stripe payments and an admin panel.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", "TanStack Query", "Stripe", "Socket.IO"],
-    features: [
-      "Caregiver search with advanced filters",
-      "Booking & scheduling flow",
-      "Stripe payment integration",
-      "Real-time chat and notifications",
-      "Separate admin panel and REST API",
+      "End-to-end hiring platform where candidates search and apply for jobs while employers post roles, create companies and track applications in real time.",
+    tech: [
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Node.js",
+      "Express.js",
+      "WebSockets",
     ],
-    live: "https://506-a.codeinges.com/",
-    repo: "https://github.com/Patel1shivani/Nanny-Services",
+    features: [
+      "Job search with filters, explore and browse",
+      "Separate employee and employer profiles",
+      "Post jobs, create companies, manage listings",
+      "Application and job status tracking",
+      "Resume, certificate and profile uploads",
+    ],
   },
   {
-    title: "Mnext Dashboard Platform",
-    category: "Live Project",
-    image: mnextImg,
+    title: "BBC Cafe Website",
+    category: "Full Stack",
+    image: cafeImg,
     description:
-      "Full-stack management platform with a data-dense React admin dashboard, a Node backend and a companion mobile app.",
-    tech: ["React.js", "Redux Toolkit", "Tailwind CSS", "ApexCharts", "Socket.IO", "Vite"],
+      "Full-stack cafe website pairing a public menu experience with an admin panel for managing dishes — graded A+ as an academic capstone.",
+    tech: ["HTML", "CSS", "JavaScript", "Tailwind", "PHP", "phpMyAdmin", "Node.js", "Express.js"],
     features: [
-      "Analytics dashboard with charts & KPIs",
-      "Sortable, filterable data tables",
-      "Real-time updates over sockets",
-      "Backend + mobile app in one monorepo",
+      "Authentication for the admin area",
+      "Full CRUD on menu management",
+      "Admin panel built with Node.js and Express.js",
+      "phpMyAdmin-backed data layer",
+      "Received an A+ grade",
     ],
-    repo: "https://github.com/Patel1shivani/Mnext",
+  },
+  {
+    title: "Share To Care Website + Dashboard",
+    category: "Client Project",
+    image: healthcareImg,
+    description:
+      "Healthcare platform with a public site, patient-facing flows and an admin panel for managing records and requests — contributed as part of the Fovty delivery team.",
+    tech: ["React.js", "Material UI", "Redux Toolkit", "Node.js", "REST APIs"],
+    features: [
+      "Public healthcare website",
+      "Patient-facing request flows",
+      "Admin panel for records management",
+      "Secure, validated form workflows",
+    ],
+  },
+  {
+    title: "Bizlaxy Website + Dashboard",
+    category: "Client Project",
+    image: bizlaxyImg,
+    description:
+      "Business management platform pairing a marketing website with a data-dense dashboard for day-to-day operations — contributed as part of the Fovty delivery team.",
+    tech: ["React.js", "Tailwind CSS", "Redux Toolkit", "Node.js", "REST APIs"],
+    features: [
+      "Business management modules",
+      "KPI dashboard",
+      "Reusable table and form system",
+      "Role-aware navigation",
+    ],
   },
   {
     title: "KidsKloud Learning Platform",
-    category: "Live Project",
+    category: "Client Project",
     image: kidskloudImg,
     description:
-      "Learning platform for kids with lesson slides, course progress tracking and an admin area for managing content.",
-    tech: ["Laravel", "Blade", "JavaScript", "Vite", "MySQL"],
+      "Learning platform for kids with slide-based lessons, course progress tracking and an admin area for managing content — contributed as part of the Fovty delivery team.",
+    tech: ["Laravel", "Blade", "JavaScript", "MySQL", "Vite"],
     features: [
-      "Lesson & slide-based content delivery",
+      "Lesson and slide-based content delivery",
       "Course progress tracking",
       "Admin content management",
       "Responsive, kid-friendly UI",
     ],
     live: "https://www.kidskloud.com/",
-    repo: "https://github.com/Patel1shivani/kidsClaoud",
   },
   {
-    title: "Travel Website + Dashboard",
-    category: "Live Project",
-    image: travelImg,
+    title: "Task Management App",
+    category: "MERN Project",
+    image: taskImg,
     description:
-      "Complete travel management system with a customer-facing booking site and a full admin dashboard for operations.",
-    tech: ["React.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "REST APIs", "Chart.js"],
+      "Task manager for creating, editing and prioritising work with drag-and-drop ordering, backed by an Express API and MongoDB persistence.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Local Storage"],
     features: [
-      "Admin dashboard with analytics",
-      "User management",
-      "Booking management",
-      "Role-based protected routes",
+      "Create, edit and prioritise tasks",
+      "Drag-and-drop reordering",
+      "Express REST API for task operations",
+      "MongoDB storage with local-storage fallback",
     ],
-    repo: "https://github.com/Patel1shivani/TravelDashbaord",
   },
   {
-    title: "Share To Care Website + Dashboard",
-    category: "Live Project",
-    image: healthcareImg,
+    title: "Portfolio Website",
+    category: "MERN Project",
+    image: portfolioImg,
     description:
-      "Healthcare platform with a public site, patient-facing flows and an admin panel to manage records and requests.",
-    tech: ["React.js", "TypeScript", "Material UI", "Redux Toolkit", "REST APIs"],
-    features: ["Healthcare platform", "Dashboard", "Admin panel", "Secure form workflows"],
-    repo: "https://github.com/Patel1shivani/Share2Care",
-  },
-  {
-    title: "ApplyLaw Website",
-    category: "Live Project",
-    image: applylawImg,
-    description:
-      "Law consultation platform focused on trust, clarity and fast lead capture across every device.",
-    tech: ["React.js", "Bootstrap", "REST APIs"],
-    features: ["Responsive design", "Consultation enquiry flow", "SEO-friendly page structure"],
-    live: "https://www.applylaw.co.uk/",
-  },
-  {
-    title: "Bizlaxy Website + Dashboard",
-    category: "Live Project",
-    image: bizlaxyImg,
-    description:
-      "Business management platform pairing a marketing website with a data-dense dashboard for day-to-day operations.",
-    tech: ["React.js", "Tailwind CSS", "Redux Toolkit", "REST APIs"],
-    features: ["Business management modules", "KPI dashboard", "Reusable table & form system"],
-  },
-  {
-    title: "Online Shopping Application",
-    category: "Live Project",
-    image: shoppingImg,
-    description:
-      "E-commerce storefront with product listings, category filters, product detail pages and a working cart and checkout flow.",
-    tech: ["React.js", "Tailwind CSS", "React Router", "Context API", "REST APIs"],
+      "Personal portfolio built in React with reusable components, smooth navigation and a Node backend that stores contact-form submissions.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
     features: [
-      "Product catalog with search & category filters",
-      "Product detail pages",
-      "Add to cart, quantity and price totals",
-      "Checkout flow",
-      "Fully responsive shopping UI",
+      "Reusable component architecture",
+      "Smooth section navigation",
+      "Validated contact form",
+      "Express + MongoDB submission handling",
+      "Performance-tuned for fast loads",
     ],
-    live: "https://shopping-online-webs.netlify.app",
-    repo: "https://github.com/Patel1shivani/Shopping-app",
   },
   {
-    title: "School Management Website",
-    category: "Client Project",
-    image: schoolImg,
+    title: "Red Bus Web App",
+    category: "Frontend",
+    image: redbusImg,
     description:
-      "Responsive school website with a modern UI and dynamic content pages for academics, admissions and events.",
-    tech: ["React.js", "Tailwind CSS", "React Router"],
-    features: ["Responsive school website", "Modern UI", "Dynamic pages"],
-    live: "https://schoole-project.netlify.app/",
-    repo: "https://github.com/Patel1shivani/School_web",
+      "Responsive transportation booking interface with route search, seat layout and trip listings that hold together on every screen size.",
+    tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    features: [
+      "Route and date search UI",
+      "Seat selection layout",
+      "Dynamic trip listings",
+      "Mobile-first responsive design",
+    ],
   },
   {
-    title: "Restaurant Website",
-    category: "Client Project",
-    image: restaurantImg,
+    title: "Tier List Web App",
+    category: "Frontend",
+    image: tierlistImg,
     description:
-      "Responsive restaurant website with an appetising menu experience and a table booking section.",
-    tech: ["React.js", "CSS3", "Bootstrap", "Node.js"],
-    features: ["Responsive restaurant website", "Menu", "Booking section", "Node.js backend"],
-    live: "https://resaturant-web.netlify.app/",
-    repo: "https://github.com/Patel1shivani/Resaturant-web",
+      "Interactive tier-ranking board where items are dragged between S–D rows, built in vanilla JavaScript to sharpen DOM fundamentals.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Drag items between tier rows",
+      "Editable tier labels",
+      "State handled in plain JavaScript",
+      "Responsive board layout",
+    ],
   },
 ];
 
 export const services = [
   {
-    title: "React.js Development",
-    description: "Component-driven React apps with clean state management and predictable data flow.",
+    title: "MERN Stack Development",
+    description:
+      "End-to-end web apps on MongoDB, Express, React and Node — one developer across the whole flow.",
+  },
+  {
+    title: "React & Next.js Development",
+    description: "Component-driven interfaces with clean state management and predictable data flow.",
   },
   {
     title: "Frontend Development",
     description: "Semantic, accessible markup and modern CSS turned into fast production interfaces.",
   },
   {
-    title: "Dashboard Development",
-    description: "Data-dense admin panels: tables, filters, charts, roles and permissions.",
+    title: "REST API Development",
+    description: "Express endpoints with validation, auth and error handling wired straight into the UI.",
+  },
+  {
+    title: "Database Design",
+    description: "MongoDB and SQL schemas modelled around how the application actually queries them.",
   },
   {
     title: "Responsive Website Design",
     description: "Layouts that hold up from 320px phones to ultra-wide desktops.",
-  },
-  {
-    title: "API Integration",
-    description: "REST API wiring with loading, error and empty states handled properly.",
-  },
-  {
-    title: "UI Development",
-    description: "Figma-to-React translation with reusable design-system components.",
   },
   {
     title: "Website Maintenance",
@@ -303,10 +390,10 @@ export const services = [
 ];
 
 export const achievements = [
-  { value: "2+", label: "Years of Professional Experience" },
-  { value: "10+", label: "Live Projects Delivered" },
-  { value: "100%", label: "Production-Level Applications" },
-  { value: "React", label: "Strong Ecosystem Knowledge" },
+  { value: "1.5+", label: "Years of Hands-On Development" },
+  { value: "9+", label: "Projects Built & Delivered" },
+  { value: "5", label: "Industry Certifications" },
+  { value: "MERN", label: "End-to-End Stack Coverage" },
 ];
 
 export const navItems = [

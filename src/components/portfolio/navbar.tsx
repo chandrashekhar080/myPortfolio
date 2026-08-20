@@ -26,12 +26,12 @@ export function Navbar() {
       >
         <a href="#top" className="flex min-w-0 items-center gap-3">
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-brand font-display text-sm font-bold text-primary-foreground">
-            SP
+            {profile.initials}
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-sm font-bold">{profile.name}</span>
             <span className="block truncate font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted-foreground">
-              React Developer
+              {profile.title}
             </span>
           </span>
         </a>

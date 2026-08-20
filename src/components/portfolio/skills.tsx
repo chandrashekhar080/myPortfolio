@@ -8,19 +8,19 @@ import { Reveal } from "./reveal";
 const groupMeta: Record<string, { icon: LucideIcon; blurb: string }> = {
   Frontend: {
     icon: MonitorSmartphone,
-    blurb: "The layer users actually touch — where I go deepest.",
+    blurb: "The layer users actually touch — React, Next.js and modern CSS.",
   },
   Backend: {
     icon: Server,
-    blurb: "Enough depth to integrate and debug APIs confidently.",
+    blurb: "Node and Express APIs, auth and real-time connections.",
   },
   Database: {
     icon: Database,
-    blurb: "Modelling and querying the data behind the interface.",
+    blurb: "Modelling and querying data across NoSQL and SQL.",
   },
   Tools: {
     icon: Wrench,
-    blurb: "The daily workflow around writing and shipping code.",
+    blurb: "The daily workflow around writing, testing and shipping code.",
   },
 };
 
@@ -51,8 +51,8 @@ export function Skills() {
     <section id="skills" className="relative section-shell">
       <SectionHeading
         eyebrow="Skills"
-        title="The stack I build production interfaces with"
-        description="Frontend is where I go deepest, backed by enough backend and database knowledge to integrate confidently."
+        title="The MERN stack, end to end"
+        description="React and Next.js on the surface, Node and Express underneath, MongoDB and SQL behind them — plus the tooling that ships it all."
       />
 
       <div className="glass mt-12 overflow-hidden rounded-3xl">

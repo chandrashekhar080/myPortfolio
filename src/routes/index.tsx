@@ -11,9 +11,9 @@ import { Contact } from "@/components/portfolio/contact";
 import { Footer } from "@/components/portfolio/footer";
 import { ScrollToTop } from "@/components/portfolio/scroll-to-top";
 
-const title = "Shivani Patel — React.js Frontend Developer in Indore";
+const title = "Chandrashekhar Ghosh — MERN Stack Developer in Indore";
 const description =
-  "React.js frontend developer with 2+ years of experience building responsive web apps, dashboards and admin panels. Based in Indore, India.";
+  "MERN stack developer building responsive, scalable full-stack web applications with React.js, Next.js, Node.js, Express.js and MongoDB. Based in Indore, India.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "Shivani Patel, React developer Indore, React.js frontend developer, Redux Toolkit, Tailwind CSS portfolio",
+          "Chandrashekhar Ghosh, MERN stack developer Indore, full stack developer, React.js, Next.js, Node.js, Express.js, MongoDB portfolio",
       },
     ],
     scripts: [
@@ -36,16 +36,24 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Shivani Patel",
-          jobTitle: "React.js Frontend Developer",
+          name: "Chandrashekhar Ghosh",
+          jobTitle: "MERN Stack Developer",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Indore",
             addressRegion: "Madhya Pradesh",
             addressCountry: "IN",
           },
-          worksFor: { "@type": "Organization", name: "Fovty Software Solution Pvt. Ltd." },
-          knowsAbout: ["React.js", "Redux Toolkit", "Tailwind CSS", "REST APIs", "Node.js"],
+          worksFor: { "@type": "Organization", name: "Fovty Solutions Pvt. Ltd." },
+          knowsAbout: [
+            "React.js",
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "REST APIs",
+            "Tailwind CSS",
+          ],
         }),
       },
     ],

@@ -1,10 +1,18 @@
-import { profile, skillGroups, experience, education, projects } from "@/data/portfolio";
+import {
+  profile,
+  skillGroups,
+  experience,
+  education,
+  certifications,
+  projects,
+} from "@/data/portfolio";
 
 const PROFILE_SUMMARY =
-  "React.js developer with 2+ years of experience building responsive, scalable and user-friendly " +
-  "web applications, dashboards and admin panels for production clients. Comfortable across the " +
-  "MERN stack, with hands-on experience in role-based authentication, payment integrations, " +
-  "data-heavy dashboards and performance optimisation.";
+  "MERN stack developer with a strong foundation in frontend and full-stack development, building " +
+  "responsive, scalable and user-friendly web applications. Hands-on across React.js, Next.js, " +
+  "Node.js, Express.js and MongoDB, with practical experience in REST API development and " +
+  "integration, authentication, real-time features and both SQL and NoSQL databases. Keen to keep " +
+  "growing into AI-driven applications and cloud-based solutions.";
 
 function escapeHtml(value: string) {
   return value
@@ -14,9 +22,20 @@ function escapeHtml(value: string) {
     .replace(/"/g, "&quot;");
 }
 
+function resumeFileName(extension: string) {
+  return `${profile.name.replace(/\s+/g, "-")}-MERN-Stack-Developer-Resume.${extension}`;
+}
+
+/** Links the résumé should show — anything left blank in the profile is skipped. */
+function profileLinks() {
+  return [profile.linkedin, profile.github].filter(Boolean) as string[];
+}
+
 function buildResumeHtml() {
-  const contact = [profile.location, profile.email, profile.phone].map(escapeHtml).join(" · ");
-  const links = [profile.linkedin, profile.github].map(escapeHtml).join(" · ");
+  const contact = [profile.location, profile.email, `${profile.phone}, ${profile.phoneAlt}`]
+    .map(escapeHtml)
+    .join(" · ");
+  const links = profileLinks().map(escapeHtml).join(" · ");
 
   const jobs = experience
     .map(
@@ -38,6 +57,30 @@ function buildResumeHtml() {
         `<p class="skill-row"><strong>${escapeHtml(group.label)}:</strong> ${group.skills
           .map((skill) => escapeHtml(skill.name))
           .join(", ")}</p>`,
+    )
+    .join("");
+
+  const schooling = education
+    .map(
+      (item) => `
+        <article class="entry">
+          <header>
+            <h3>${escapeHtml(item.degree)}</h3>
+            <span>${escapeHtml(item.year)}</span>
+          </header>
+          <p class="meta">${escapeHtml(item.institute)}, ${escapeHtml(item.location)} · ${escapeHtml(
+            item.score,
+          )}</p>
+        </article>`,
+    )
+    .join("");
+
+  const certs = certifications
+    .map(
+      (cert) =>
+        `<p class="skill-row"><strong>${escapeHtml(cert.title)}</strong> — ${escapeHtml(
+          cert.issuer,
+        )} (${escapeHtml(cert.date)})</p>`,
     )
     .join("");
 
@@ -112,7 +155,7 @@ function buildResumeHtml() {
     <h1>${escapeHtml(profile.name)}</h1>
     <p class="role">${escapeHtml(profile.title)} · ${escapeHtml(profile.experience)} experience</p>
     <p class="contact">${contact}</p>
-    <p class="contact">${links}</p>
+    ${links ? `<p class="contact">${links}</p>` : ""}
   </header>
 
   <section>
@@ -127,13 +170,7 @@ function buildResumeHtml() {
 
   <section>
     <h2>Education</h2>
-    <article class="entry">
-      <header>
-        <h3>${escapeHtml(education.degree)}</h3>
-        <span>${escapeHtml(education.year)}</span>
-      </header>
-      <p class="meta">${escapeHtml(education.institute)}, ${escapeHtml(education.location)}</p>
-    </article>
+    ${schooling}
   </section>
 
   <section>
@@ -145,6 +182,11 @@ function buildResumeHtml() {
     <h2>Projects</h2>
     ${work}
   </section>
+
+  <section>
+    <h2>Certifications</h2>
+    ${certs}
+  </section>
 </body>
 </html>`;
 }
@@ -154,8 +196,8 @@ function downloadResumeText() {
   const lines = [
     profile.name.toUpperCase(),
     `${profile.title} · ${profile.experience} experience`,
-    `${profile.location} · ${profile.email} · ${profile.phone}`,
-    `${profile.linkedin} · ${profile.github}`,
+    `${profile.location} · ${profile.email} · ${profile.phone}, ${profile.phoneAlt}`,
+    profileLinks().join(" · "),
     "",
     "PROFILE",
     PROFILE_SUMMARY,
@@ -167,8 +209,9 @@ function downloadResumeText() {
       "",
     ]),
     "EDUCATION",
-    education.degree,
-    `${education.institute}, ${education.location} (${education.year})`,
+    ...education.map(
+      (item) => `${item.degree} — ${item.institute}, ${item.location} (${item.year}, ${item.score})`,
+    ),
     "",
     "SKILLS",
     ...skillGroups.map((group) => `${group.label}: ${group.skills.map((s) => s.name).join(", ")}`),
@@ -179,13 +222,16 @@ function downloadResumeText() {
       ...(p.live ? [`  Live: ${p.live}`] : []),
       ...(p.repo ? [`  Code: ${p.repo}`] : []),
     ]),
+    "",
+    "CERTIFICATIONS",
+    ...certifications.map((c) => `${c.title} — ${c.issuer} (${c.date})`),
   ];
 
   const blob = new Blob([lines.join("\n")], { type: "text/plain;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "Shivani-Patel-React-Developer-Resume.txt";
+  a.download = resumeFileName("txt");
   a.click();
   URL.revokeObjectURL(url);
 }

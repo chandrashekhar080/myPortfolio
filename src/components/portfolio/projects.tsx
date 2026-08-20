@@ -9,8 +9,8 @@ export function Projects() {
     <section id="projects" className="section-shell">
       <SectionHeading
         eyebrow="Projects"
-        title="Websites and dashboards running in production"
-        description="Ten delivered projects spanning marketing sites, e-commerce, admin panels and full management systems — each linked to its live site or source code."
+        title="Full-stack builds, front to back"
+        description="Client platforms and personal builds — a hiring portal, healthcare and business dashboards, a learning platform, an authenticated admin panel and responsive frontend work."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
