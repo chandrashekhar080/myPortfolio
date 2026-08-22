@@ -100,6 +100,10 @@ goes blank. Leaving `VITE_API_URL` empty makes the frontend run entirely on that
 
 `frontend/.env` → `VITE_API_URL`  ·  `admin/.env` → `VITE_API_URL`, `VITE_SITE_URL`
 
+`VITE_API_URL` is the **host only** — `https://myportfolio-backend-c8pg.onrender.com`, not
+`…/api`. Both apps append `/api/...` themselves. A trailing slash or a trailing `/api` is
+stripped at runtime, so an old setting can no longer produce `/api/api/...` 404s.
+
 ---
 
 ## Deploying
@@ -111,6 +115,11 @@ goes blank. Leaving `VITE_API_URL` empty makes the frontend run entirely on that
    Set `VITE_API_URL` to the deployed API before building.
 3. **Admin** — `npm run build:admin` emits `admin/dist/`, a static bundle for any host. Set
    `VITE_API_URL` before building, and add the admin's origin to `CORS_ORIGINS` on the backend.
+   `admin/netlify.toml` already carries the build command, the publish dir, both `VITE_*` values
+   and the SPA fallback — on Netlify just set **Base directory** to `admin`.
+
+On the backend host, `PUBLIC_URL` must be the API's own URL (not `localhost`), or uploaded images
+resolve to addresses the browser cannot reach.
 
 The admin sends `noindex, nofollow`, but it is a public URL — the JWT login is what protects it.
 Use a strong password, and put it behind your host's access control if you can.

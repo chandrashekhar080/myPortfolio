@@ -1,0 +1,20 @@
+# Netlify config for the admin panel.
+# Set "Base directory" to `admin` in Netlify; the paths below are relative to it.
+
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # The API host. No trailing slash and no `/api` suffix — the app appends
+  # `/api/...` to this itself.
+  VITE_API_URL = "https://myportfolio-backend-c8pg.onrender.com"
+  VITE_SITE_URL = "https://shekharmyportfolio.netlify.app"
+
+# Client-side routing: every unknown path must serve index.html, otherwise a
+# refresh on /settings or a direct link to /messages returns Netlify's 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

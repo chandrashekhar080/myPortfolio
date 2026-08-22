@@ -1,4 +1,15 @@
-const API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:5000").replace(/\/$/, "");
+/**
+ * Base URL of the API — e.g. https://myportfolio-backend-c8pg.onrender.com
+ *
+ * Every path in this app already starts with `/api`, so a VITE_API_URL that
+ * also ends in `/api` would build `/api/api/...` and 404. Both spellings are
+ * accepted here — trailing slashes and a trailing `/api` are stripped — so the
+ * value set in Netlify can carry the suffix or not without breaking the build.
+ */
+const API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:5000")
+  .trim()
+  .replace(/\/+$/, "")
+  .replace(/\/api$/i, "");
 const TOKEN_KEY = "portfolio-admin-token";
 
 export class ApiError extends Error {

@@ -124,7 +124,17 @@ export const fallbackContent: SiteContent = {
   achievements: [...achievements],
 };
 
-const API_URL = (import.meta.env.VITE_API_URL ?? "").replace(/\/$/, "");
+/**
+ * Base URL of the API — e.g. https://myportfolio-backend-c8pg.onrender.com
+ *
+ * Callers append their own `/api/...` path, so a VITE_API_URL that already ends
+ * in `/api` would build `/api/api/...` and 404. Both spellings are accepted
+ * here — trailing slashes and a trailing `/api` are stripped.
+ */
+const API_URL = (import.meta.env.VITE_API_URL ?? "")
+  .trim()
+  .replace(/\/+$/, "")
+  .replace(/\/api$/i, "");
 
 /** Only arrays the API actually returned should replace the bundled ones. */
 function list<T>(value: unknown, fallback: T[]): T[] {
