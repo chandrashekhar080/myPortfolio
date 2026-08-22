@@ -1,5 +1,5 @@
 import { connectDb, disconnectDb } from "./config/db.js";
-import { env } from "./config/env.js";
+import { env, assertEnv } from "./config/env.js";
 import {
   User,
   Profile,
@@ -83,6 +83,7 @@ async function seedProfile() {
 }
 
 async function run() {
+  assertEnv();
   await connectDb();
   console.log(fresh ? "\nSeeding (fresh — existing content is wiped):" : "\nSeeding:");
 
